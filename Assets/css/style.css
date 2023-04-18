@@ -1,4 +1,4 @@
-/*! GENERALI */
+/*! STILI GENERALI */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&display=swap%27');
 
 .templateContainer {
@@ -10,54 +10,55 @@
     width: 1000px;
     height: 700px;
     font-family: 'Outfit', sans-serif;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
-
-.addFlex {
-    display: flex;
-}
-
 .logo {
     width: 18%;
 }
+         /*! STILI ADD */
+        .addFlex {
+            display: flex;
+        }
 
-.nextPoint {
-    background-color: aqua;
-    color: rgb(20, 0, 69);
-    font-size: 1.2rem;
-    border: 0;
-    font-weight: bold;
-    padding: 15px 50px;
-    box-shadow: rgba(102, 255, 255, 0.7) 0 -5px 15px, rgba(102, 255, 255, 0.7) 0 5px 15px;
-}
+         /*! BUTTON GENERAL */
+        .nextPoint {
+            background-color: aqua;
+            color: rgb(20, 0, 69);
+            font-size: 1.2rem;
+            border: 0;
+            font-weight: bold;
+            padding: 15px 50px;
+            box-shadow: rgba(102, 255, 255, 0.7) 0 -5px 15px, rgba(102, 255, 255, 0.7) 0 5px 15px;
+        }
+        
+        /*! FONT */
 
+        .h1 {
+            font-size: 4rem;
+        }
 
-/*! FONT */
+        .h2 {
+            font-size: 2rem;
+        }
 
-.h1 {
-    font-size: 4rem;
-}
+        .h3 {
+            font-size: 1.5rem;
+        }
 
-.h2 {
-    font-size: 2rem;
-}
+        .h4 {
+            font-size: 1.2rem;
+        }
 
-.h3 {
-    font-size: 1.5rem;
-}
+        .p {
+            font-size: 1rem;
+            line-height: 1.2;
+        }
 
-.h4 {
-    font-size: 1.2rem;
-}
-
-.p {
-    font-size: 1rem;
-    line-height: 1.2;
-}
-
-.bold {
-    font-weight: bold;
-}
-
+        .bold {
+            font-weight: bold;
+        }
 
 /*! FIRST PAGE*/
 .first {
