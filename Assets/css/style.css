@@ -174,12 +174,10 @@
 
 .third .main .resultsTitle .h2 {
     font-weight: bold;
-    font-size: 3rem;
     margin-bottom: 0.5rem;
 }
 
-.third .main .resultsTitle .h4 {
-    font-size: 1.5rem;
+.third .main .resultsTitle .h3 {
     margin-bottom: 0.8rem;
 }
 
@@ -193,12 +191,7 @@
     width: 200px;
 }
 
-.third .main .results .correctAnswers .riga1 {
-    font-size: 3rem;
-}
-
 .third .main .results .correctAnswers .riga2 {
-    font-size: 3rem;
     font-weight: 900;
 }
 
@@ -210,12 +203,7 @@
     text-align: right;
 }
 
-.third .main .results .wrongAnswers .riga1 {
-    font-size: 3rem;
-}
-
 .third .main .results .wrongAnswers .riga2 {
-    font-size: 3rem;
     font-weight: 900;
 }
 
