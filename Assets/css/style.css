@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     box-sizing: border-box;
     color: white;
-    width: 80vw;
+    width: 1000px;
     font-family: 'Outfit', sans-serif;
 }
 
@@ -117,13 +117,13 @@
     width: 15px;
     background-color: rgba(0, 0, 0, 0);
     border: white 2px solid;
+    margin-top: -2px;
 }
 
 .first .footer .checkText {
     font-size: 0.8rem;
-    margin-right: 180px;
+    margin-right: 250px;
     margin-left: 30px;
-
 }
 
 .first .footer .nextPoint{
