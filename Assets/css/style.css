@@ -126,24 +126,21 @@
     margin-right: 250px;
     margin-left: 30px;
 }
-/* On mouse-over, add a grey background color */
+
 .checkContainer:hover input ~ .checkmark {
     background-color: white;
   }
   
-  /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
   
-  /* Show the checkmark when checked */
   .checkContainer input:checked ~ .checkmark:after {
     display: block;
   }
   
-  /* Style the checkmark/indicator */
   .checkContainer .checkmark:after {
     left: 5px;
     top: 0px;
@@ -177,53 +174,74 @@
     padding-top: 40px;
     padding-left: 100px;
 }
-.main .resultsTitle .h2{
-    font-weight: 900;
+.third .main .resultsTitle .h2{
+    font-weight: bold;
     font-size: 3rem;
     margin-bottom: 0.5rem;
 }
 
-.main .resultsTitle .h4{
+.third .main .resultsTitle .h4{
     font-size: 1.5rem;
     margin-bottom: 0.8rem;
 }
 
-.main .results{
+.third .main .results{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-left: 5rem;
     padding-right: 5rem;
 }
 
-.main .results .correctAnswers{
-    font-weight: 900;
-    font-size: 3rem;
-    width: 33%;
+.third .main .results div{
+    width: 200px;
 }
 
-.main .results .wrongAnswers{
-    font-weight: 900;
+.third .main .results .correctAnswers .riga1{
     font-size: 3rem;
-    width: 33%;
+}
+
+.third .main .results .correctAnswers .riga2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.third .main .results .correctAnswers .riga3{
+    font-weight: 200;
+}
+
+.third .main .results .wrongAnswers{
     text-align: right;
 }
 
-.main .results .examResults{
+.third .main .results .wrongAnswers .riga1{
+    font-size: 3rem;
+}
+
+.third .main .results .wrongAnswers .riga2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.third .main .results .wrongAnswers .riga3{
+    font-weight: 200;
+}
+
+.third .main .results .examResults{
     width: 20%;
     text-align: center;
 }
 
-.main .results .examResults .happySad{
+.third .main .results .examResults .happySad{
     font-weight: 600;
 }
 
-.main .results .examResults .esito{
+.third .main .results .examResults .esito{
     font-weight: 600;
     color: #00ffff;
 }
 
-.main .addFlex{
+.third .main .addFlex{
     justify-content: center;
     padding-top: 3rem;
 }
