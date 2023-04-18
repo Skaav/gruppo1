@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/reset.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
 </head>
 
 <body>
 
     <!--TODO (PRIMA PAGINA) -->
-    <template id="primaPagina">
+    <!-- <template id="primaPagina"> -->
     <!--? COMMENTARE I TEMPLATE PER VISUALIZZARE IL CONTENUTO IN PAGINA -->
 
     <div class="templateContainer first thin">
@@ -22,7 +22,7 @@
 
         <!--* HEADER -->
         <div class="header">
-            <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
         </div>
 
         <!--* MAIN -->
@@ -57,11 +57,11 @@
             <!--! CLASSE PER BOTTONI-->
         </div>
     </div>
-    </template>
+    <!-- </template> -->
 
     <!--TODO (SECONDA PAGINA) -->
 
-    <template id="secondaPagina">
+    <!-- <template id="secondaPagina"> -->
 
     <div class="templateContainer second">
 
@@ -69,9 +69,9 @@
         <div class="header">
             <!--! CLASSE PER FLEX GENITORE-->
             <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
-            <!-- <div class="timer">
-                    timer da inserire con funzione 
-                </div> -->
+            <div class="timerContainer">
+                    <canvas id="myTimer"></canvas>
+                </div>
         </div>
 
         <!--* MAIN -->
@@ -108,7 +108,7 @@
             </div>
         </div>
     </div>
-    </template>
+    <!-- </template> -->
 
     <!--TODO (TERZA PAGINA) -->
 
@@ -117,7 +117,7 @@
     <div class="templateContainer third">
         <!--* HEADER -->
         <div class="header">
-            <img src="/Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
         </div>
 
         <!--* MAIN -->
@@ -180,12 +180,12 @@
 
     <!--TODO (QUARTA PAGINA) -->
 
-    <template id="quartaPagina">
+    <!-- <template id="quartaPagina"> -->
 
     <div class="templateContainer fourth thin">
         <!--* HEADER -->
         <div class="header">
-            <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
         </div>
 
         <!--* MAIN -->
@@ -195,16 +195,16 @@
             <div class="h3">From 0 to 10, how likely are you to recommend EPICODE to a friend or a colleague?</div>
             <div class="stars">
                 <!-- funzione per permettere di valutare con le stelline -->
-                <img src="assets/img/star.svg" alt="">
-                <img src="assets/img/star.svg" alt="">
-                <img src="assets/img/star.svg" alt="">
-                <img src="assets/img/star.svg" alt="">
-                <img src="assets/img/star.svg" alt="">
-                <img src="assets/img/star.svg" alt="">
-                <img src="assets/img/star.svg" alt="">
-                <img src="assets/img/star.svg" alt="">
-                <img src="assets/img/star.svg" alt="">
-                <img src="assets/img/star.svg" alt="">
+                <img src="Assets/img/star.svg" alt="">
+                <img src="Assets/img/star.svg" alt="">
+                <img src="Assets/img/star.svg" alt="">
+                <img src="Assets/img/star.svg" alt="">
+                <img src="Assets/img/star.svg" alt="">
+                <img src="Assets/img/star.svg" alt="">
+                <img src="Assets/img/star.svg" alt="">
+                <img src="Assets/img/star.svg" alt="">
+                <img src="Assets/img/star.svg" alt="">
+                <img src="Assets/img/star.svg" alt="">
             </div>
             <div class="h4">Leave us an oper feedback about your experienece so far</div>
             <!--! CLASSE PER H4 (TESTI MEDI)-->
@@ -215,9 +215,10 @@
             <!--! CLASSE PER BOTTONI-->
         </div>
     </div>
-    </template>
-    <script src="assets/scripts/doughnut.js">
-    </script>
+    <!-- </template> -->
+
+    <script src="Assets/scripts/timer.js"></script>
+    <script src="Assets/scripts/doughnut.js"></script>
     <script></script>
 </body>
 
