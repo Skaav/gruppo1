@@ -8,6 +8,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Outfit&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,136 +20,142 @@
     <!--TODO (PRIMA PAGINA) -->
     <!-- <template id="primaPagina"> -->
     <!--? COMMENTARE I TEMPLATE PER VISUALIZZARE IL CONTENUTO IN PAGINA -->
-        
-        <div class="templateContainer first"> <!--! CLASSE PER CONTAINER-->
+
+    <div class="templateContainer first"> <!--! CLASSE PER CONTAINER-->
+
+        <!--* HEADER -->
+        <div class="header">
+            <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+        </div>
+
+        <!--* MAIN -->
+        <div class="main">
+            <div class="h1">Welcome to <div class="bold">your exam</div>
+            </div> <!--! CLASSE PER H1-->
+            <div class="purple bold">Instructions</div>
+            <div class="p">We don't expect most engineers to know the answers to all of these questions, so don't worry
+                if you're unsure of a few of them</div>
+
+            <ul id="lista">
+                <li>Each question is <span class="bold">timed</span> and can only be <span class="bold">answered
+                        once</span>.</li>
+                <li>Changing browser tab or opening other windows will invalidate the question.</li>
+                <li>This exam will take approx. <span class="bold">0-5 minutes</span>.</li>
+                <!--! CLASSE PER BOLD TEXT-->
+            </ul>
+        </div>
+
+        <!--* FOOTER -->
+        <div class="footer addFlex"> <!--! CLASSE PER FLEX GENITORE-->
+            <div>
+                <input type="checkbox" class="checkbox">
+                <span class="p bold">I promise to answer myself without help from anyone</span> <!--! CLASSE PER P-->
+            </div>
+
+            <button class="nextPoint">PROCEED</button> <!--! CLASSE PER BOTTONI-->
+        </div>
+    </div>
+    <!-- </template> -->
+
+    <!--TODO (SECONDA PAGINA) -->
+
+    <template id="secondaPagina">
+
+        <div class="templateContainer second">
 
             <!--* HEADER -->
-            <div class="header"> 
+            <div class="addFlex header"> <!--! CLASSE PER FLEX GENITORE-->
+                <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+                <div class="timer">
+                    <!-- timer da inserire con funzione -->
+                </div>
+            </div>
+
+            <!--* MAIN -->
+            <div class="main">
+                <div class="question h2"> <!--! CLASSE PER H2-->
+                    <!-- domanda da inserire con funzione -->
+                </div>
+                <div class="addFlex answers"> <!--! CLASSE PER FLEX GENITORE-->
+                    <!-- bottoni con risposte da inserire con funzione in base al numero di quesiti -->
+                </div>
+            </div>
+
+            <!--* FOOTER -->
+            <div class="footer">
+                <div class="questionNumber">
+                    <!-- funzione da inserire che segnali l'avanzamento delle domande -->
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!--TODO (TERZA PAGINA) -->
+
+    <template id="terzaPagina">
+
+        <div class="templateContainer third">
+
+            <!--* HEADER -->
+            <div class="header">
                 <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
             </div>
 
             <!--* MAIN -->
-            <div class="main"> 
-                <div class="h1">Welcome to <div class="bold">your exam</div></div> <!--! CLASSE PER H1-->
-                <div class="purple bold">Instructions</div>
-                <div class="p">We don't expect most engineers to know the answers to all of these questions, so don't worry if you're unsure of a few of them</div>
+            <div class="main">
 
-                    <ul id="lista">
-                        <li>Each question is <span class="bold">timed</span> and can only be <span class="bold">answered once</span>.</li>
-                        <li>Changing browser tab or opening other windows will invalidate the question.</li>
-                        <li>This exam will take approx. <span class="bold">0-5 minutes</span>.</li> <!--! CLASSE PER BOLD TEXT-->
-                    </ul>
+                <div class="resultsTitle">
+                    <div class="h2">Results</div> <!--! CLASSE PER H2-->
+                    <div class="h4">The summary of your answers:</div> <!--! CLASSE PER H4 (TESTI MEDI)-->
                 </div>
 
-            <!--* FOOTER -->
-                <div class="footer addFlex"> <!--! CLASSE PER FLEX GENITORE-->
-                    <div>
-                        <input type="checkbox" class="checkbox">
-                        <span class="p bold">I promise to answer myself without help from anyone</span> <!--! CLASSE PER P-->
+                <div class="results">
+                    <div class="correctAnswers">
+                        <!-- percentuale di domande corrette -->
                     </div>
-
-                    <button class="nextPoint">PROCEED</button> <!--! CLASSE PER BOTTONI-->
-                </div>
-            </div>
-        <!-- </template> -->
-
-    <!--TODO (SECONDA PAGINA) -->
-
-        <template id="secondaPagina">
-
-            <div class="templateContainer second">
-
-                <!--* HEADER -->
-                <div class="addFlex header"> <!--! CLASSE PER FLEX GENITORE-->
-                    <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
-                    <div class="timer">
-                        <!-- timer da inserire con funzione -->
+                    <div class="pie">
+                        <!-- grafico a torta della percentuale -->
+                    </div>
+                    <div class="wrongAnswers">
+                        <!-- percentuale di domande errate -->
+                    </div>
+                    <div class="examResults">
+                        <!-- funzione che genera l'esito dell'esame (passed/not passed) -->
                     </div>
                 </div>
 
-                <!--* MAIN -->
-                <div class="main">
-                    <div class="question h2"> <!--! CLASSE PER H2-->
-                        <!-- domanda da inserire con funzione -->
-                    </div>
-                    <div class="addFlex answers"> <!--! CLASSE PER FLEX GENITORE-->
-                        <!-- bottoni con risposte da inserire con funzione in base al numero di quesiti -->
-                    </div>
-                </div>
-
-                <!--* FOOTER -->
-                <div class="footer">
-                    <div class="questionNumber"> 
-                        <!-- funzione da inserire che segnali l'avanzamento delle domande -->
-                    </div>
+                <div class="addFlex"> <!--! CLASSE PER FLEX GENITORE-->
+                    <button class="nextPoint"></button> <!--! CLASSE PER BOTTONI-->
                 </div>
             </div>
-        </template>
+        </div>
+    </template>
 
-    <!--TODO (TERZA PAGINA) -->
-
-        <template id="terzaPagina">
-
-            <div class="templateContainer third">
-
-                <!--* HEADER -->
-                <div class="header"> 
-                    <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
-                </div>
-
-                <!--* MAIN -->
-                <div class="main">
-
-                    <div class="resultsTitle">
-                        <div class="h2">Results</div> <!--! CLASSE PER H2-->
-                        <div class="h4">The summary of your answers:</div> <!--! CLASSE PER H4 (TESTI MEDI)-->
-                    </div>
-
-                    <div class="results">
-                        <div class="correctAnswers">
-                            <!-- percentuale di domande corrette -->
-                        </div>
-                        <div class="pie">
-                            <!-- grafico a torta della percentuale -->
-                        </div>
-                        <div class="wrongAnswers">
-                            <!-- percentuale di domande errate -->
-                        </div>
-                        <div class="examResults">
-                            <!-- funzione che genera l'esito dell'esame (passed/not passed) -->
-                        </div>
-                    </div>
-
-                    <div class="addFlex"> <!--! CLASSE PER FLEX GENITORE-->
-                        <button class="nextPoint"></button> <!--! CLASSE PER BOTTONI-->
-                    </div>
-                </div>
-            </div>
-        </template>
-        
     <!--TODO (QUARTA PAGINA) -->
 
-        <template id="quartaPagina">
+    <template id="quartaPagina">
 
-            <div class="templateContainer fourth">
-                <!--* HEADER -->
-                <div class="header"> 
-                    <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
-                </div>
-
-                <!--* MAIN -->
-                <div class="main">
-                    <div clas="h2">Tell us how it's going</div> <!--! CLASSE PER H2-->
-                    <div class="h4">From 0 to 10, how likely are you to recommend EPICODE to a friend or a colleague?</div> <!--! CLASSE PER H4 (TESTI MEDI)-->
-                    <div class="stars">
-                        <!-- funzione per permettere di valutare con le stelline -->
-                    </div>
-                    <div class="h4">Leave us an oper feedback about your experienece so far</div> <!--! CLASSE PER H4 (TESTI MEDI)-->
-                    <input type="text" placeholder="Write your comment here">
-                    <button class="nextPoint">MORE INFO</button> <!--! CLASSE PER BOTTONI-->
-                </div>
+        <div class="templateContainer fourth">
+            <!--* HEADER -->
+            <div class="header">
+                <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
             </div>
-        </template>
+
+            <!--* MAIN -->
+            <div class="main">
+                <div clas="h2">Tell us how it's going</div> <!--! CLASSE PER H2-->
+                <div class="h4">From 0 to 10, how likely are you to recommend EPICODE to a friend or a colleague?</div>
+                <!--! CLASSE PER H4 (TESTI MEDI)-->
+                <div class="stars">
+                    <!-- funzione per permettere di valutare con le stelline -->
+                </div>
+                <div class="h4">Leave us an oper feedback about your experienece so far</div>
+                <!--! CLASSE PER H4 (TESTI MEDI)-->
+                <input type="text" placeholder="Write your comment here">
+                <button class="nextPoint">MORE INFO</button> <!--! CLASSE PER BOTTONI-->
+            </div>
+        </div>
+    </template>
 
     <script></script>
 </body>
