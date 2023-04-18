@@ -68,13 +68,15 @@
 .bold {
     font-weight: bold;
 }
-
+.bolder{
+    font-weight: 900;
+}
+.thin{
+    font-weight: 200;
+}
 
 /*! FIRST PAGE*/
 
-.first {
-    font-weight: 200;
-}
 .purple {
     color: fuchsia;
     font-size: x-large;
@@ -185,30 +187,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 75px;
 }
 
 .third .main .results div {
-    width: 200px;
-}
-
-.third .main .results .correctAnswers .riga2 {
-    font-weight: 900;
-}
-
-.third .main .results .correctAnswers .riga3 {
-    font-weight: 200;
+    width: 160px;
 }
 
 .third .main .results .wrongAnswers {
     text-align: right;
-}
-
-.third .main .results .wrongAnswers .riga2 {
-    font-weight: 900;
-}
-
-.third .main .results .wrongAnswers .riga3 {
-    font-weight: 200;
 }
 
 .third .main .results .examResults {
@@ -216,13 +204,13 @@
     text-align: center;
 }
 
-.third .main .results .examResults .happySad {
-    font-weight: 600;
+.third .main .results .examResults .esito {
+    color: #00ffff;
 }
 
-.third .main .results .examResults .esito {
-    font-weight: 600;
-    color: #00ffff;
+.third .main .results .examResults .cosaFare {
+    margin-top: 15px;
+    font-size: 0.8rem;
 }
 
 .third .main .addFlex {
@@ -240,10 +228,6 @@
 
 /*! FOURTH PAGE*/
 
-.fourth {
-    font-weight: 200;
-}
-
 .fourth .main {
     text-align: center;
     padding-left: 90px;
@@ -252,17 +236,15 @@
 
 .fourth .h2 {
     margin-top: 80px;
-    font-weight: bold;
-    font-size: 2.8rem;
 }
 
 .fourth .h3 {
     margin-top: 30px;
-    font-size: 1.5rem;
 }
 
 .fourth .stars {
     margin-top: 30px;
+    margin-bottom: 60px;
     display: inline-block;
 }
 
@@ -272,9 +254,8 @@
     padding-right: 2px;
 }
 
-.fourth .h4 {
+.fourth .h3 {
     margin-top: 30px;
-    font-size: 1.5rem;
 }
 
 .fourth .comment {
