@@ -1,6 +1,6 @@
 /*! STILI GENERALI */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&display=swap%27');
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&display=swap%27');
 .templateContainer {
     background-image: url(/assets/img/bg.jpg);
     background-size: cover;
@@ -14,56 +14,66 @@
     padding-left: 100px;
     padding-right: 100px;
 }
+
 .logo {
     width: 18%;
 }
-         /*! STILI ADD */
-        .addFlex {
-            display: flex;
-        }
 
-         /*! BUTTON GENERAL */
-        .nextPoint {
-            background-color: aqua;
-            color: rgb(20, 0, 69);
-            font-size: 1.2rem;
-            border: 0;
-            font-weight: bold;
-            padding: 15px 50px;
-            box-shadow: rgba(102, 255, 255, 0.7) 0 -5px 15px, rgba(102, 255, 255, 0.7) 0 5px 15px;
-        }
-        
-        /*! FONT */
 
-        .h1 {
-            font-size: 4rem;
-        }
+/*! STILI ADD */
 
-        .h2 {
-            font-size: 2rem;
-        }
+.addFlex {
+    display: flex;
+}
 
-        .h3 {
-            font-size: 1.5rem;
-        }
 
-        .h4 {
-            font-size: 1.2rem;
-        }
+/*! BUTTON GENERAL */
 
-        .p {
-            font-size: 1rem;
-            line-height: 1.2;
-        }
+.nextPoint {
+    background-color: aqua;
+    color: rgb(20, 0, 69);
+    font-size: 1.2rem;
+    border: 0;
+    font-weight: bold;
+    padding: 15px 50px;
+    box-shadow: rgba(102, 255, 255, 0.7) 0 -5px 15px, rgba(102, 255, 255, 0.7) 0 5px 15px;
+}
 
-        .bold {
-            font-weight: bold;
-        }
+
+/*! FONT */
+
+.h1 {
+    font-size: 4rem;
+}
+
+.h2 {
+    font-size: 2rem;
+}
+
+.h3 {
+    font-size: 1.5rem;
+}
+
+.h4 {
+    font-size: 1.2rem;
+}
+
+.p {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 
 /*! FIRST PAGE*/
+
 .first {
     font-weight: 200;
 }
+
 .first .header {
     margin-bottom: 40px;
     padding-top: 40px;
@@ -84,6 +94,7 @@
 #lista {
     margin-top: 30px;
 }
+
 #lista li {
     margin-top: 5px;
     margin-left: 20px;
@@ -91,8 +102,8 @@
 
 .first .footer {
     padding: 60px 100px;
-
 }
+
 .first .chekContainer {
     display: block;
     position: relative;
@@ -103,8 +114,8 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
 }
+
 .first .checkbox {
     position: absolute;
     opacity: 0;
@@ -128,21 +139,21 @@
     margin-left: 30px;
 }
 
-.checkContainer:hover input ~ .checkmark {
+.checkContainer:hover input~.checkmark {
     background-color: white;
-  }
-  
-  .checkmark:after {
+}
+
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  .checkContainer input:checked ~ .checkmark:after {
+}
+
+.checkContainer input:checked~.checkmark:after {
     display: block;
-  }
-  
-  .checkContainer .checkmark:after {
+}
+
+.checkContainer .checkmark:after {
     left: 5px;
     top: 0px;
     width: 5px;
@@ -152,9 +163,9 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
 
-.first .footer .nextPoint{
+.first .footer .nextPoint {
     justify-content: right;
     margin-bottom: 10px;
     margin-top: -15px;
@@ -166,7 +177,7 @@
 
 /*! THIRD PAGE*/
 
-.resultsTitle{
+.resultsTitle {
     text-align: center;
 }
 
@@ -175,18 +186,19 @@
     padding-top: 40px;
     padding-left: 100px;
 }
-.third .main .resultsTitle .h2{
+
+.third .main .resultsTitle .h2 {
     font-weight: bold;
     font-size: 3rem;
     margin-bottom: 0.5rem;
 }
 
-.third .main .resultsTitle .h4{
+.third .main .resultsTitle .h4 {
     font-size: 1.5rem;
     margin-bottom: 0.8rem;
 }
 
-.third .main .results{
+.third .main .results {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -194,65 +206,123 @@
     padding-right: 5rem;
 }
 
-.third .main .results div{
+.third .main .results div {
     width: 200px;
 }
 
-.third .main .results .correctAnswers .riga1{
+.third .main .results .correctAnswers .riga1 {
     font-size: 3rem;
 }
 
-.third .main .results .correctAnswers .riga2{
+.third .main .results .correctAnswers .riga2 {
     font-size: 3rem;
     font-weight: 900;
 }
 
-.third .main .results .correctAnswers .riga3{
+.third .main .results .correctAnswers .riga3 {
     font-weight: 200;
 }
 
-.third .main .results .wrongAnswers{
+.third .main .results .wrongAnswers {
     text-align: right;
 }
 
-.third .main .results .wrongAnswers .riga1{
+.third .main .results .wrongAnswers .riga1 {
     font-size: 3rem;
 }
 
-.third .main .results .wrongAnswers .riga2{
+.third .main .results .wrongAnswers .riga2 {
     font-size: 3rem;
     font-weight: 900;
 }
 
-.third .main .results .wrongAnswers .riga3{
+.third .main .results .wrongAnswers .riga3 {
     font-weight: 200;
 }
 
-.third .main .results .examResults{
+.third .main .results .examResults {
     width: 20%;
     text-align: center;
 }
 
-.third .main .results .examResults .happySad{
+.third .main .results .examResults .happySad {
     font-weight: 600;
 }
 
-.third .main .results .examResults .esito{
+.third .main .results .examResults .esito {
     font-weight: 600;
     color: #00ffff;
 }
 
-.third .main .addFlex{
+.third .main .addFlex {
     justify-content: center;
     padding-top: 3rem;
 }
 
-#rate{
+#rate {
     text-align: center;
     background-color: transparent;
-    border : 2px solid white;
+    border: 2px solid white;
     color: white;
     box-shadow: none;
 }
 
+
 /*! FOURTH PAGE*/
+
+.fourth {
+    font-weight: 200;
+}
+
+.fourth .header {
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+.fourth .main {
+    text-align: center;
+    padding-left: 190px;
+    padding-right: 190px;
+}
+
+.fourth .h2 {
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+.fourth .h3 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.fourth .stars {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.fourth .stars img {
+    width: 8%;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.fourth .h4 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.fourth .comment {
+    margin-top: 30px;
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: fuchsia 1px solid;
+}
+
+.fourth .nextPoint {
+    margin-top: 50px;
+}

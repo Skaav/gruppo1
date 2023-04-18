@@ -49,7 +49,8 @@
                 <input type="checkbox" class="checkbox addAbsolute" required>
                 <span class="checkmark addAbsoute"></span>
             </label>
-            <span class="checkText p bold">I promise to answer myself without help from anyone</span><!--! CLASSE PER P-->
+            <span class="checkText p bold">I promise to answer myself without help from anyone</span>
+            <!--! CLASSE PER P-->
 
             <button class="nextPoint">PROCEED</button>
             <!--! CLASSE PER BOTTONI-->
@@ -94,90 +95,109 @@
 
     <!-- <template id="terzaPagina"> -->
 
-        <div class="templateContainer third">
-            <!--* HEADER -->
-            <div class="header"> 
-                <img src="/Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+    <div class="templateContainer third">
+        <!--* HEADER -->
+        <div class="header">
+            <img src="/Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+        </div>
+
+        <!--* MAIN -->
+        <div class="main">
+
+            <div class="resultsTitle">
+                <div class="h2">Results</div>
+                <!--! CLASSE PER H2-->
+                <div class="h4">The summary of your answers:</div>
+                <!--! CLASSE PER H4 (TESTI MEDI)-->
             </div>
-        
-            <!--* MAIN -->
-            <div class="main">
-        
-                <div class="resultsTitle">
-                    <div class="h2">Results</div> <!--! CLASSE PER H2-->
-                    <div class="h4">The summary of your answers:</div> <!--! CLASSE PER H4 (TESTI MEDI)-->
+
+            <div class="results">
+                <div class="correctAnswers">
+                    <p class="riga1">
+                        Correct
+                    </p>
+                    <p class="riga2">
+                        66%
+                    </p>
+                    <p class="riga3">
+                        n/n questions
+                    </p>
+                    <!-- percentuale di domande corrette -->
                 </div>
-        
-                <div class="results">
-                    <div class="correctAnswers">
-                        <p class="riga1">
-                            Correct
-                        </p>
-                        <p class="riga2">
-                            66%
-                        </p>
-                        <p class="riga3">
-                            n/n questions
-                        </p>
-                        <!-- percentuale di domande corrette -->
-                    </div>
-                    <div class="examResults">
-                        <p class="happySad">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                        <p class="esito">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                        <p class="cosaFare">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        </p>
-                        <!-- funzione che genera l'esito dell'esame (passed/not passed) -->
-                    </div>
-                    <div class="wrongAnswers">
-                        <p class="riga1">
-                            Wrong
-                        </p>
-                        <p class="riga2">
-                            34%
-                        </p>
-                        <p class="riga3">
-                            n/n questions
-                        </p><!-- percentuale di domande errate -->
-                    </div>
+                <div class="examResults">
+                    <p class="happySad">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="esito">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="cosaFare">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                    <!-- funzione che genera l'esito dell'esame (passed/not passed) -->
                 </div>
-                <div class="pie">
-                    <!-- grafico a torta della percentuale -->
-                </div>
-        
-                <div class="addFlex"> <!--! CLASSE PER FLEX GENITORE-->
-                    <button class="nextPoint" id="rate">RATE US</button> <!--! CLASSE PER BOTTONI-->
+                <div class="wrongAnswers">
+                    <p class="riga1">
+                        Wrong
+                    </p>
+                    <p class="riga2">
+                        34%
+                    </p>
+                    <p class="riga3">
+                        n/n questions
+                    </p>
+                    <!-- percentuale di domande errate -->
                 </div>
             </div>
-        </div>   
+            <div class="pie">
+                <!-- grafico a torta della percentuale -->
+            </div>
+
+            <div class="addFlex">
+                <!--! CLASSE PER FLEX GENITORE-->
+                <button class="nextPoint" id="rate">RATE US</button>
+                <!--! CLASSE PER BOTTONI-->
+            </div>
+        </div>
+    </div>
     <!-- </template> -->
 
     <!--TODO (QUARTA PAGINA) -->
 
-    <template id="quartaPagina">
+    <!-- <template id="quartaPagina"> -->
 
-        <div class="templateContainer fourth">
-            <!--* HEADER -->
-            <div class="header">
-                <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
-            </div>
-
-            <!--* MAIN -->
-            <div class="main">
-                <div clas="h2">Tell us how it's going</div> <!--! CLASSE PER H2-->
-                <div class="h4">From 0 to 10, how likely are you to recommend EPICODE to a friend or a colleague?</div>
-                <!--! CLASSE PER H4 (TESTI MEDI)-->
-                <div class="stars">
-                    <!-- funzione per permettere di valutare con le stelline -->
-                </div>
-                <div class="h4">Leave us an oper feedback about your experienece so far</div>
-                <!--! CLASSE PER H4 (TESTI MEDI)-->
-                <input type="text" placeholder="Write your comment here">
-                <button class="nextPoint">MORE INFO</button> <!--! CLASSE PER BOTTONI-->
-            </div>
+    <div class="templateContainer fourth">
+        <!--* HEADER -->
+        <div class="header">
+            <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
         </div>
-    </template>
+
+        <!--* MAIN -->
+        <div class="main">
+            <div class="h2">Tell us how it's going</div>
+            <!--! CLASSE PER H2-->
+            <div class="h3">From 0 to 10, how likely are you to recommend EPICODE to a friend or a colleague?</div>
+            <!--! CLASSE PER H4 (TESTI MEDI)-->
+            <div class="stars">
+                <!-- funzione per permettere di valutare con le stelline -->
+                <img src="assets/img/star.svg" alt="">
+                <img src="assets/img/star.svg" alt="">
+                <img src="assets/img/star.svg" alt="">
+                <img src="assets/img/star.svg" alt="">
+                <img src="assets/img/star.svg" alt="">
+                <img src="assets/img/star.svg" alt="">
+                <img src="assets/img/star.svg" alt="">
+                <img src="assets/img/star.svg" alt="">
+                <img src="assets/img/star.svg" alt="">
+                <img src="assets/img/star.svg" alt="">
+            </div>
+            <div class="h4">Leave us an oper feedback about your experienece so far</div>
+            <!--! CLASSE PER H4 (TESTI MEDI)-->
+            <div>
+                <input type="text" class="comment" placeholder="Write your comment here">
+            </div>
+            <button class="nextPoint">MORE INFO</button>
+            <!--! CLASSE PER BOTTONI-->
+        </div>
+    </div>
+    <!-- </template> -->
 
     <script></script>
 </body>
