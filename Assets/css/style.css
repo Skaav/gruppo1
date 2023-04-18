@@ -94,7 +94,7 @@
 }
 
 .first .footer {
-    padding: 60px 100px;
+    padding: 60px 0;
 }
 
 .first .chekContainer {
@@ -129,7 +129,7 @@
 .first .footer .checkText {
     font-size: 0.8rem;
     margin-right: 250px;
-    margin-left: 30px;
+    margin-left: 35px;
 }
 
 .checkContainer:hover input~.checkmark {
