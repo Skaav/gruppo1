@@ -13,9 +13,11 @@
     padding:40px 60px;
 }
 .logo {
-    width: 18%;
+    width: 15%;
 }
-
+.header{
+    margin-bottom: 40px;
+}
 
 /*! STILI ADD */
 
@@ -35,7 +37,10 @@
     padding: 15px 50px;
     box-shadow: rgba(102, 255, 255, 0.7) 0 -5px 15px, rgba(102, 255, 255, 0.7) 0 5px 15px;
 }
-
+.nextPoint:hover {
+    background-color: rgba(0, 255, 255, 0.874);
+    color: white;
+}
 
 /*! FONT */
 
@@ -167,12 +172,6 @@
     text-align: center;
 }
 
-.third .header {
-    margin-bottom: 40px;
-    padding-top: 40px;
-    padding-left: 100px;
-}
-
 .third .main .resultsTitle .h2 {
     font-weight: bold;
     font-size: 3rem;
@@ -245,7 +244,7 @@
     padding-top: 3rem;
 }
 
-#rate {
+.rate {
     text-align: center;
     background-color: transparent;
     border: 2px solid white;
@@ -253,17 +252,10 @@
     box-shadow: none;
 }
 
-
 /*! FOURTH PAGE*/
 
 .fourth {
     font-weight: 200;
-}
-
-.fourth .header {
-    margin-bottom: 40px;
-    padding-top: 40px;
-    padding-left: 100px;
 }
 
 .fourth .main {
