@@ -8,6 +8,7 @@
     box-sizing: border-box;
     color: white;
     width: 1000px;
+    height: 700px;
     font-family: 'Outfit', sans-serif;
 }
 
@@ -137,15 +138,16 @@
 
 
 /*! THIRD PAGE*/
-.third{
-    padding-left: 5rem;
-    padding-right: 5rem;
-}
 
 .resultsTitle{
     text-align: center;
 }
 
+.third .header {
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 100px;
+}
 .main .resultsTitle .h2{
     font-weight: 900;
     font-size: 3rem;
@@ -154,12 +156,15 @@
 
 .main .resultsTitle .h4{
     font-size: 1.5rem;
+    margin-bottom: 0.8rem;
 }
 
 .main .results{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .main .results .correctAnswers{
@@ -177,6 +182,7 @@
 
 .main .results .examResults{
     width: 20%;
+    text-align: center;
 }
 
 .main .results .examResults .happySad{
@@ -189,7 +195,6 @@
 }
 
 .main .addFlex{
-    display: flex;
     justify-content: center;
     padding-top: 3rem;
 }
