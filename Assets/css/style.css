@@ -10,11 +10,8 @@
     width: 1000px;
     height: 700px;
     font-family: 'Outfit', sans-serif;
-    padding-top: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding:40px 60px;
 }
-
 .logo {
     width: 18%;
 }
@@ -73,17 +70,6 @@
 .first {
     font-weight: 200;
 }
-
-.first .header {
-    margin-bottom: 40px;
-    padding-top: 40px;
-    padding-left: 100px;
-}
-
-.first .main {
-    padding: 40px 100px;
-}
-
 .purple {
     color: fuchsia;
     font-size: x-large;
