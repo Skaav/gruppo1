@@ -1,0 +1,142 @@
+/*! GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&display=swap%27');
+
+.templateContainer {
+    background-image: url(/assets/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    color: white;
+    width: 1000px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.addFlex {
+    display: flex;
+}
+
+.logo {
+    width: 18%;
+}
+
+.nextPoint {
+    background-color: aqua;
+    color: rgb(20, 0, 69);
+    font-size: 1.2rem;
+    border: 0;
+    font-weight: bold;
+    padding: 15px 50px;
+    box-shadow: rgba(102, 255, 255, 0.7) 0 -5px 15px, rgba(102, 255, 255, 0.7) 0 5px 15px;
+}
+
+
+/*! FONT */
+
+.h1 {
+    font-size: 4rem;
+}
+
+.h2 {
+    font-size: 2rem;
+}
+
+.h3 {
+    font-size: 1.5rem;
+}
+
+.h4 {
+    font-size: 1.2rem;
+}
+
+.p {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/*! FIRST PAGE*/
+.first {
+    font-weight: 200;
+}
+.first .header {
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+.first .main {
+    padding: 40px 100px;
+}
+
+.purple {
+    color: fuchsia;
+    font-size: x-large;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#lista {
+    margin-top: 30px;
+}
+#lista li {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.first .footer {
+    padding: 60px 100px;
+
+}
+.first .chekContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+.first .checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.first .checkmark {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    border: white 2px solid;
+    margin-top: -2px;
+}
+
+.first .footer .checkText {
+    font-size: 0.8rem;
+    margin-right: 250px;
+    margin-left: 30px;
+}
+
+.first .footer .nextPoint{
+    justify-content: right;
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+
+
+/*! SECOND PAGE*/
+
+
+/*! THIRD PAGE*/
+
+
+/*! FOURTH PAGE*/
