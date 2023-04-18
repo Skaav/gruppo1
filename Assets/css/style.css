@@ -137,6 +137,69 @@
 
 
 /*! THIRD PAGE*/
+.third{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
 
+.resultsTitle{
+    text-align: center;
+}
+
+.main .resultsTitle .h2{
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.main .resultsTitle .h4{
+    font-size: 1.5rem;
+}
+
+.main .results{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main .results .correctAnswers{
+    font-weight: 900;
+    font-size: 3rem;
+    width: 33%;
+}
+
+.main .results .wrongAnswers{
+    font-weight: 900;
+    font-size: 3rem;
+    width: 33%;
+    text-align: right;
+}
+
+.main .results .examResults{
+    width: 20%;
+}
+
+.main .results .examResults .happySad{
+    font-weight: 600;
+}
+
+.main .results .examResults .esito{
+    font-weight: 600;
+    color: #00ffff;
+}
+
+.main .addFlex{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+#rate{
+    text-align: center;
+    background-color: transparent;
+    border : 2px solid white;
+    color: white;
+    box-shadow: none;
+}
 
 /*! FOURTH PAGE*/

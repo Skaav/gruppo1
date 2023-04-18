@@ -13,7 +13,7 @@
 <body>
 
     <!--TODO (PRIMA PAGINA) -->
-    <!-- <template id="primaPagina"> -->
+    <template id="primaPagina">
     <!--? COMMENTARE I TEMPLATE PER VISUALIZZARE IL CONTENUTO IN PAGINA -->
 
     <div class="templateContainer first">
@@ -55,7 +55,7 @@
             <!--! CLASSE PER BOTTONI-->
         </div>
     </div>
-    <!-- </template> -->
+    </template>
 
     <!--TODO (SECONDA PAGINA) -->
 
@@ -92,44 +92,50 @@
 
     <!--TODO (TERZA PAGINA) -->
 
-    <template id="terzaPagina">
+    <!-- <template id="terzaPagina"> -->
 
         <div class="templateContainer third">
-
             <!--* HEADER -->
-            <div class="header">
-                <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+            <div class="header"> 
+                <img src="/Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
             </div>
-
+        
             <!--* MAIN -->
             <div class="main">
-
+        
                 <div class="resultsTitle">
                     <div class="h2">Results</div> <!--! CLASSE PER H2-->
                     <div class="h4">The summary of your answers:</div> <!--! CLASSE PER H4 (TESTI MEDI)-->
                 </div>
-
+        
                 <div class="results">
                     <div class="correctAnswers">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <!-- percentuale di domande corrette -->
+                    </div>
+                    <div class="examResults">
+                        <p class="happySad">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p class="esito">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p class="cosaFare">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        </p>
+                        <!-- funzione che genera l'esito dell'esame (passed/not passed) -->
+                    </div>
+                    <div class="wrongAnswers">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><!-- percentuale di domande errate -->
                     </div>
                     <div class="pie">
                         <!-- grafico a torta della percentuale -->
                     </div>
-                    <div class="wrongAnswers">
-                        <!-- percentuale di domande errate -->
-                    </div>
-                    <div class="examResults">
-                        <!-- funzione che genera l'esito dell'esame (passed/not passed) -->
-                    </div>
                 </div>
-
+        
                 <div class="addFlex"> <!--! CLASSE PER FLEX GENITORE-->
-                    <button class="nextPoint"></button> <!--! CLASSE PER BOTTONI-->
+                    <button class="nextPoint" id="rate">RATE US</button> <!--! CLASSE PER BOTTONI-->
                 </div>
             </div>
-        </div>
-    </template>
+        </div>   
+    <!-- </template> -->
 
     <!--TODO (QUARTA PAGINA) -->
 
