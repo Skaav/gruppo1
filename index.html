@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -13,7 +14,7 @@
 <body>
 
     <!--TODO (PRIMA PAGINA) -->
-    <!-- <template id="primaPagina"> -->
+    <template id="primaPagina">
     <!--? COMMENTARE I TEMPLATE PER VISUALIZZARE IL CONTENUTO IN PAGINA -->
 
     <div class="templateContainer first thin">
@@ -56,55 +57,58 @@
             <!--! CLASSE PER BOTTONI-->
         </div>
     </div>
-    <!-- </template> -->
+    </template>
 
     <!--TODO (SECONDA PAGINA) -->
 
-    <!-- <template id="secondaPagina"> -->
+    <template id="secondaPagina">
 
-        <div class="templateContainer second">
+    <div class="templateContainer second">
 
-            <!--* HEADER -->
-            <div class="header"> <!--! CLASSE PER FLEX GENITORE-->
-                <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
-                <!-- <div class="timer">
+        <!--* HEADER -->
+        <div class="header">
+            <!--! CLASSE PER FLEX GENITORE-->
+            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+            <!-- <div class="timer">
                     timer da inserire con funzione 
                 </div> -->
+        </div>
+
+        <!--* MAIN -->
+        <div class="main">
+            <div class="question h2">
+                <!--! CLASSE PER H2-->
+                <p class="h2 bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <!-- domanda da inserire con funzione -->
+                </p>
             </div>
-    
-            <!--* MAIN -->
-            <div class="main">
-                <div class="question h2"> <!--! CLASSE PER H2-->
-                    <p class="h2 bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.   
-                        <!-- domanda da inserire con funzione -->
-                    </p>
-                </div>
-                <div class="answers addFlex questFlex"> <!--! CLASSE PER FLEX GENITORE-->               
-                        <button class="buttQuest bold">
+            <div class="answers addFlex questFlex">
+                <!--! CLASSE PER FLEX GENITORE-->
+                <button class="buttQuest bold">
                             Lorem ipsum
                         </button>
-                        <button class="buttQuest bold">
+                <button class="buttQuest bold">
                             Lorem ipsum
                         </button>
-                        <button class="buttQuest bold">
+                <button class="buttQuest bold">
                             Lorem ipsum
                         </button>
-                        <button class="buttQuest bold">
+                <button class="buttQuest bold">
                             Lorem ipsum
                         </button>
-                    <!-- bottoni con risposte da inserire con funzione in base al numero di quesiti -->
-                </div>
+                <!-- bottoni con risposte da inserire con funzione in base al numero di quesiti -->
             </div>
-    
-            <!--* FOOTER -->
-            <div class="footer">
-                <div class="questionNumber p">
-                    QUESTION 1 <span>/10</span>
-                    <!-- funzione da inserire che segnali l'avanzamento delle domande -->
-                </div>
+        </div>
+
+        <!--* FOOTER -->
+        <div class="footer">
+            <div class="questionNumber p">
+                QUESTION 1 <span>/10</span>
+                <!-- funzione da inserire che segnali l'avanzamento delle domande -->
             </div>
-        </div> 
-    <!-- </template> -->
+        </div>
+    </div>
+    </template>
 
     <!--TODO (TERZA PAGINA) -->
 
@@ -124,6 +128,9 @@
                 <!--! CLASSE PER H2-->
                 <div class="h3">The summary of your answers:</div>
                 <!--! CLASSE PER H3 (TESTI MEDI)-->
+            </div>
+            <div class="chartContainer">
+                <canvas id="myCanvas"></canvas>
             </div>
 
             <div class="results">
@@ -173,7 +180,7 @@
 
     <!--TODO (QUARTA PAGINA) -->
 
-    <!-- <template id="quartaPagina"> -->
+    <template id="quartaPagina">
 
     <div class="templateContainer fourth thin">
         <!--* HEADER -->
@@ -208,8 +215,9 @@
             <!--! CLASSE PER BOTTONI-->
         </div>
     </div>
-    <!-- </template> -->
-
+    </template>
+    <script src="assets/scripts/doughnut.js">
+    </script>
     <script></script>
 </body>
 
