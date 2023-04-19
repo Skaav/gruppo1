@@ -322,10 +322,9 @@
     width: 8%;
     padding-left: 2px;
     padding-right: 2px;
-    filter: opacity(10%);
 }
 .fourth .stars img:hover{
-    filter: none;
+    cursor: pointer;
 }
 
 .fourth .h3 {
