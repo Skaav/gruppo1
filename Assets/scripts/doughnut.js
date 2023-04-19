@@ -7,9 +7,15 @@ let chart = new Chart(canvas, {
     data: {
         lables: lable,
         datasets: [{
+            backgroundColor:[
+                "#00ffff",
+                "#D20094"
+            ],
+            borderWidth: 0,
+            cutout: 90, 
             lable: 'Risposte',
             data: data
-        }]
+        }],
     }
 
 });
