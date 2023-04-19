@@ -2,18 +2,14 @@ PROGETTO BUILD WEEK 1
 
 PAGINA 1 (WELCOME)
 - HTML 
-
 - CSS 
-
 - JavaScript 
 (Agganciare bottone a funzione distruggi/crea template)
 
 PAGINA 2 (EXAM)
 - HTML 
-
 - CSS 
 (Rivedere bordi dei bottoni)
-
 - JavaScript
 (Funzione per generare domande/risposte casuali)
 let n = [1,2,3,4]
@@ -27,19 +23,14 @@ function shuffle(array) {
     }
     return newArr;
 }
-(Fixare chart timer)
 
 PAGINA 3 (RESULTS)
 - HTML
-
 - CSS  
-
 - JavaScript
-(Fixare chart risposte)
+(funzione per indicare risposte al chart)
 
 PAGINA 4 (VALUE)
 - HTML
-
 - CSS
-
 - JavaScript
