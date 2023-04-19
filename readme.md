@@ -23,12 +23,13 @@ function shuffle(array) {
     }
     return newArr;
 }
-
+(funzione per generare numero quesito)
 PAGINA 3 (RESULTS)
 - HTML
 - CSS  
 - JavaScript
 (funzione per indicare risposte al chart)
+(colegare wrong e right answers)
 
 PAGINA 4 (VALUE)
 - HTML
