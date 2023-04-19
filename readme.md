@@ -1,15 +1,15 @@
 PROGETTO BUILD WEEK 1
 
 PAGINA 1 (WELCOME)
-- HTML (Fatto)
+- HTML 
 
-- CSS (Fatto)
+- CSS 
 
 - JavaScript 
 (Agganciare bottone a funzione distruggi/crea template)
 
 PAGINA 2 (EXAM)
-- HTML (Fatto)
+- HTML 
 
 - CSS 
 (Rivedere bordi dei bottoni)
@@ -29,18 +29,17 @@ function shuffle(array) {
 }
 (Fixare chart timer)
 
-PAGINA 3 ()
-- HTML (Fatto)
+PAGINA 3 (RESULTS)
+- HTML
 
-- CSS  (Fatto)
+- CSS  
 
 - JavaScript
 (Fixare chart risposte)
 
-PAGINA 4 ()
-- HTML (Fatto)
+PAGINA 4 (VALUE)
+- HTML
 
-- CSS (Fatto)
+- CSS
 
-- JavaScript 
-(Funzionne valutazione con stelline)
+- JavaScript
