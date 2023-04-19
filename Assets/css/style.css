@@ -32,10 +32,6 @@
     position: relative;
 }
 
-.addAbsolute{
-    position: absolute;
-}
-
 /*! BUTTON GENERAL */
 
 .nextPoint {
@@ -138,67 +134,6 @@ input[type="checkbox"]::after {
 input[type="checkbox"]:checked::after {
     transform: scale(1);
 }
-
-/* .first .chekContainer {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.first .checkbox {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.first .checkmark {
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    background-color: rgba(0, 0, 0, 0);
-    border: white 2px solid;
-    margin-top: -2px;
-}
-
-.first .footer .checkText {
-    font-size: 0.8rem;
-    margin-right: 250px;
-    margin-left: 35px;
-}
-
-.checkContainer:hover input~.checkmark {
-    background-color: white;
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.checkContainer input:checked~.checkmark:after {
-    display: block;
-}
-
-.checkContainer .checkmark:after {
-    left: 5px;
-    top: 0px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-} */
 
 .first .footer .nextPoint {
     margin-bottom: 10px;
