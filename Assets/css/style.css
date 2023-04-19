@@ -32,16 +32,16 @@
 /*! BUTTON GENERAL */
 
 .nextPoint {
-    background-color: aqua;
+    background-color: #00ffff;
     color: rgb(20, 0, 69);
     font-size: 1.2rem;
     border: 0;
     font-weight: bold;
     padding: 15px 50px;
-    box-shadow: rgba(102, 255, 255, 0.7) 0 -5px 15px, rgba(102, 255, 255, 0.7) 0 5px 15px;
+    box-shadow: #00ffff 0 -5px 15px, #00ffff 0 5px 15px;
 }
 
-.nextPoint:hover {
+.nextPoint:hover  {
     background-color: rgba(0, 255, 255, 0.874);
     color: white;
 }
@@ -86,7 +86,7 @@
 /*! FIRST PAGE*/
 
 .purple {
-    color: fuchsia;
+    color: #D20094;
     font-size: x-large;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -211,7 +211,7 @@
 }
 
 .buttQuest:hover {
-    background-color: fuchsia;
+    background-image: linear-gradient(#D20094, #900080);
 }
 
 .questionNumber {
@@ -220,7 +220,7 @@
 }
 
 .questionNumber span {
-    color: fuchsia;
+    color: #D20094;
 }
 
 
@@ -322,6 +322,10 @@
     width: 8%;
     padding-left: 2px;
     padding-right: 2px;
+    filter: opacity(10%);
+}
+.fourth .stars img:hover{
+    filter: none;
 }
 
 .fourth .h3 {
@@ -334,7 +338,7 @@
     padding-bottom: 5px;
     background: transparent;
     border: none;
-    border-bottom: fuchsia 1px solid;
+    border-bottom: #D20094 1px solid;
 }
 
 .fourth .nextPoint {
