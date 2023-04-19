@@ -1,6 +1,6 @@
 /*! STILI GENERALI */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Outfit&display=swap%27');
 .templateContainer {
     background-image: url(/assets/img/bg.jpg);
     background-size: cover;
@@ -82,6 +82,7 @@
 }
 
 .thin {
+    font-family: 'Inter', serif;
     font-weight: 200;
 }
 
@@ -138,27 +139,11 @@ input[type="checkbox"]:checked::after {
 .first .footer .nextPoint {
     margin-bottom: 10px;
     margin-top: -15px;
-    margin-left: 205px;
+    margin-left: 190px;
 }
 
 
 /*! SECOND PAGE*/
-
-.timerContainer {
-    position: relative;
-    width: 100%;
-}
-
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-} */
 
 .center {
     display: flex;
@@ -167,16 +152,18 @@ html{
 }
 
 .main-container {
-    width: 100%;
-    height: 100vh;
     background-color: transparent;
+    position: absolute;
+    left: 600px;
+    top: -80px;
+    scale: 25%;
 }
 
 /* progress indicator */
 .circle-container {
     width: 400px;
     height: 400px;
-    background-color: #ddd;
+    background-color: #dddddd;
     border-radius: 50%;
     position: absolute;
     overflow: hidden;
@@ -203,18 +190,17 @@ html{
 }
 
 .semicircle:nth-child(3){
-    background-color: #ddd;
+    background-color: #dddddd;
     z-index: 4;
     display: none;
 }
 
 .outermost-circle{
-    width: 290px;
-    height: 290px;
-    background-image: linear-gradient(blue,fuchsia);
+    width: 300px;
+    height: 300px;
+    background-color: #64256a;
     border-radius: 50%;
     z-index: 5;
-    /* display: none; */
 }
 
 .timer-container {
@@ -231,21 +217,19 @@ html{
 }
 
 .timer div {
-    font-size: 70px;
+    font-size: 100px;
     font-weight: 100;
     width: 80px;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10px 0 10px;
+    margin: 2px 10px 2px 10px;
 }
 
-.timer p{
-    font-size: 70px;
-    font-weight: 100;
-    width: 80px;
-    height: 80px;
+.timer-container p{
+    font-size: 30px;
+    font-weight: 100px;
 }
 
 .question {
