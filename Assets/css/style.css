@@ -318,13 +318,15 @@
     display: inline-block;
 }
 
-.fourth .stars img {
-    width: 8%;
-    padding-left: 2px;
-    padding-right: 2px;
-}
-.fourth .stars img:hover{
+.fourth .stars i {
+    font-size: 2.5rem;
+    margin: 4px;
     cursor: pointer;
+    color: rgba(23, 0, 57, 0.5);
+    transition: color 0.2s
+}
+.fourth .stars i.active{
+    color: #00ffff
 }
 
 .fourth .h3 {
