@@ -126,11 +126,11 @@ input[type="checkbox"]::before {
 }
 input[type="checkbox"]::after {
     content: " ";
-    height: 15px;
+    height: 17px;
     width: 15px;
     position: absolute;
     background-color: white;
-    top: 1.1px;
+    top: 0px;
     left: 2px;
     cursor: pointer;
     transform: scale(0);
