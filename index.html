@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
 </head>
 
 <body>
 
     <!--TODO (PRIMA PAGINA) -->
-    <!-- <template id="primaPagina"> -->
+    <template id="primaPagina">
     <!--? COMMENTARE I TEMPLATE PER VISUALIZZARE IL CONTENUTO IN PAGINA -->
 
-    <div class="templateContainer first">
+    <div class="templateContainer first thin">
         <!--! CLASSE PER CONTAINER-->
 
         <!--* HEADER -->
         <div class="header">
-            <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
         </div>
 
         <!--* MAIN -->
@@ -45,118 +47,195 @@
         <!--* FOOTER -->
         <div class="footer addFlex">
             <!--! CLASSE PER FLEX GENITORE-->
-            <label class="checkContainer addRelative blocco">
-                <input type="checkbox" class="checkbox addAbsolute" required>
-                <span class="checkmark addAbsoute"></span>
-            </label>
-            <span class="checkText p bold">I promise to answer myself without help from anyone</span><!--! CLASSE PER P-->
+            <form>
+                <div class="addRelative">
+                    <input type="checkbox" class="checkBox" required>
+                    <span class="checkText p bold">I promise to answer myself without help from anyone</span>
+                <!--! CLASSE PER P-->
+                </div> 
 
-            <button class="nextPoint">PROCEED</button>
+                <button class="nextPoint">PROCEED</button>
             <!--! CLASSE PER BOTTONI-->
-        </div>
+            </form>
     </div>
-    <!-- </template> -->
+    </template>
 
     <!--TODO (SECONDA PAGINA) -->
 
     <template id="secondaPagina">
 
-        <div class="templateContainer second">
+    <div class="templateContainer second">
 
-            <!--* HEADER -->
-            <div class="addFlex header"> <!--! CLASSE PER FLEX GENITORE-->
-                <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
-                <div class="timer">
-                    <!-- timer da inserire con funzione -->
-                </div>
-            </div>
-
-            <!--* MAIN -->
-            <div class="main">
-                <div class="question h2"> <!--! CLASSE PER H2-->
-                    <!-- domanda da inserire con funzione -->
-                </div>
-                <div class="addFlex answers"> <!--! CLASSE PER FLEX GENITORE-->
-                    <!-- bottoni con risposte da inserire con funzione in base al numero di quesiti -->
-                </div>
-            </div>
-
-            <!--* FOOTER -->
-            <div class="footer">
-                <div class="questionNumber">
-                    <!-- funzione da inserire che segnali l'avanzamento delle domande -->
+        <!--* HEADER -->
+        <div class="header">
+            <!--! CLASSE PER FLEX GENITORE-->
+            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+            <div class="addRelative">
+                <div class="main-container center">
+                    <!-- progress indicator -->
+                    <div class="circle-container center">
+                        <div class="semicircle"></div>
+                        <div class="semicircle"></div>
+                        <div class="semicircle"></div>
+                        <div class="outermost-circle"></div>
+                    </div>
+                
+                    <!-- timer -->
+                    <div class="timer-container center">
+                        <p class="thin">SECONDS</p>
+                        <div class="timer center"></div>
+                        <p class="thin">REMAINING</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!--* MAIN -->
+        <div class="main">
+            <div class="question h2">
+                <!--! CLASSE PER H2-->
+                <p class="h2 bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <!-- domanda da inserire con funzione -->
+                </p>
+            </div>
+            <div class="answers addFlex questFlex">
+                <!--! CLASSE PER FLEX GENITORE-->
+                <button class="buttQuest bold">
+                            Lorem ipsum
+                        </button>
+                <button class="buttQuest bold">
+                            Lorem ipsum
+                        </button>
+                <button class="buttQuest bold">
+                            Lorem ipsum
+                        </button>
+                <button class="buttQuest bold">
+                            Lorem ipsum
+                        </button>
+                <!-- bottoni con risposte da inserire con funzione in base al numero di quesiti -->
+            </div>
+        </div>
+
+        <!--* FOOTER -->
+        <div class="footer">
+            <div class="questionNumber p">
+                QUESTION 1 <span>/10</span>
+                <!-- funzione da inserire che segnali l'avanzamento delle domande -->
+            </div>
+        </div>
+    </div>
     </template>
 
     <!--TODO (TERZA PAGINA) -->
 
-    <template id="terzaPagina">
+    <!-- <template id="terzaPagina"> -->
 
-        <div class="templateContainer third">
+    <div class="templateContainer third">
+        <!--* HEADER -->
+        <div class="header">
+            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+        </div>
 
-            <!--* HEADER -->
-            <div class="header">
-                <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+        <!--* MAIN -->
+        <div class="main">
+
+            <div class="resultsTitle">
+                <div class="h2">Results</div>
+                <!--! CLASSE PER H2-->
+                <div class="h3">The summary of your answers:</div>
+                <!--! CLASSE PER H3 (TESTI MEDI)-->
+            </div>
+            <div class="chartContainer">
+                <canvas id="myCanvas"></canvas>
             </div>
 
-            <!--* MAIN -->
-            <div class="main">
-
-                <div class="resultsTitle">
-                    <div class="h2">Results</div> <!--! CLASSE PER H2-->
-                    <div class="h4">The summary of your answers:</div> <!--! CLASSE PER H4 (TESTI MEDI)-->
+            <div class="results">
+                <div class="correctAnswers">
+                    <p class="riga1 h2">
+                        Correct
+                    </p>
+                    <p class="riga2 h2 bolder">
+                        66%
+                    </p>
+                    <p class="riga3 thin">
+                        n/n questions
+                    </p>
+                    <!-- percentuale di domande corrette -->
                 </div>
-
-                <div class="results">
-                    <div class="correctAnswers">
-                        <!-- percentuale di domande corrette -->
-                    </div>
-                    <div class="pie">
-                        <!-- grafico a torta della percentuale -->
-                    </div>
-                    <div class="wrongAnswers">
-                        <!-- percentuale di domande errate -->
-                    </div>
-                    <div class="examResults">
-                        <!-- funzione che genera l'esito dell'esame (passed/not passed) -->
-                    </div>
+                <div class="examResults">
+                    <div class="p" class="happySad">Lorem ipsum</div>
+                    <div class="p esito">Lorem ipsum dolor.</div>
+                    <div class="p cosaFare thin">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                    <!-- funzione che genera l'esito dell'esame (passed/not passed) -->
                 </div>
-
-                <div class="addFlex"> <!--! CLASSE PER FLEX GENITORE-->
-                    <button class="nextPoint"></button> <!--! CLASSE PER BOTTONI-->
+                <div class="wrongAnswers">
+                    <p class="riga1 h2">
+                        Wrong
+                    </p>
+                    <p class="riga2 h2 bolder">
+                        34%
+                    </p>
+                    <p class="riga3 thin">
+                        n/n questions
+                    </p>
+                    <!-- percentuale di domande errate -->
                 </div>
+            </div>
+            <div class="pie">
+                <!-- grafico a torta della percentuale -->
+            </div>
+
+            <div class="addFlex">
+                <!--! CLASSE PER FLEX GENITORE-->
+                <button class="nextPoint rate">RATE US</button>
+                <!--! CLASSE PER BOTTONI-->
             </div>
         </div>
-    </template>
+    </div>
+    <!-- </template> -->
 
     <!--TODO (QUARTA PAGINA) -->
 
     <template id="quartaPagina">
 
-        <div class="templateContainer fourth">
-            <!--* HEADER -->
-            <div class="header">
-                <img src="assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
-            </div>
-
-            <!--* MAIN -->
-            <div class="main">
-                <div clas="h2">Tell us how it's going</div> <!--! CLASSE PER H2-->
-                <div class="h4">From 0 to 10, how likely are you to recommend EPICODE to a friend or a colleague?</div>
-                <!--! CLASSE PER H4 (TESTI MEDI)-->
-                <div class="stars">
-                    <!-- funzione per permettere di valutare con le stelline -->
-                </div>
-                <div class="h4">Leave us an oper feedback about your experienece so far</div>
-                <!--! CLASSE PER H4 (TESTI MEDI)-->
-                <input type="text" placeholder="Write your comment here">
-                <button class="nextPoint">MORE INFO</button> <!--! CLASSE PER BOTTONI-->
-            </div>
+    <div class="templateContainer fourth thin">
+        <!--* HEADER -->
+        <div class="header">
+            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
         </div>
+
+        <!--* MAIN -->
+        <div class="main">
+            <div class="h2 bold">Tell us how it's going</div>
+            <!--! CLASSE PER H2-->
+            <div class="h3">From 0 to 10, how likely are you to recommend EPICODE to a friend or a colleague?</div>
+            <div class="stars">
+                <!-- funzione per permettere di valutare con le stelline -->
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="h4">Leave us an oper feedback about your experienece so far</div>
+            <!--! CLASSE PER H4 (TESTI MEDI)-->
+            <div>
+                <input type="text" class="comment" placeholder="Write your comment here">
+            </div>
+            <button class="nextPoint">MORE INFO</button>
+            <!--! CLASSE PER BOTTONI-->
+        </div>
+    </div>
     </template>
 
+    <script src="Assets/scripts/timer.js"></script>
+    <script src="Assets/scripts/doughnut.js"></script>
+    <script src="Assets/scripts/stars.js"></script>
     <script></script>
 </body>
 
