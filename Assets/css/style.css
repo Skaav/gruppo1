@@ -51,6 +51,7 @@ a{
 .nextPoint:hover  {
     background-color: rgba(0, 255, 255, 0.874);
     color: white;
+    cursor: pointer;
 }
 
 
@@ -96,6 +97,8 @@ a{
 .purple {
     color: #D20094;
     font-size: x-large;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bolder;
     margin-top: 30px;
     margin-bottom: 10px;
 }
