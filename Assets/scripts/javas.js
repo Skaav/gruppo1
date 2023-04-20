@@ -1,6 +1,7 @@
 let currentTemplate = 1;
 let carica = document.getElementsByClassName("nextPoint");
 let targetDiv = document.getElementById("targetDiv");
+let currentButton = 1;
 
 
 carica.addEventListener("click", caricaTemplate);
