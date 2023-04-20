@@ -39,7 +39,7 @@ a{
 .addRelative{
     position: relative;
 }
-
+  
 /*! BUTTON GENERAL */
 
 .nextPoint {
@@ -58,6 +58,12 @@ a{
     cursor: pointer;
 }
 
+.startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /*! FONT */
 
