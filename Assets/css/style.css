@@ -49,7 +49,7 @@ a{
 }
 
 .nextPoint:hover  {
-    background-color: rgba(0, 255, 255, 0.874);
+    background-color: #00ffff;
     color: white;
     cursor: pointer;
 }
