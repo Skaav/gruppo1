@@ -1,6 +1,6 @@
 /*! STILI GENERALI */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Outfit&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Outfit:wght@400;700&display=swap');
 .templateContainer {
     background-image: url(/assets/img/bg.jpg);
     background-size: cover;
@@ -59,6 +59,7 @@ a{
 
 .h1 {
     font-size: 4rem;
+    font-family: 'Outfit', sans-serif;
 }
 
 .h2 {
@@ -78,18 +79,20 @@ a{
     line-height: 1.2;
 }
 
+.thin {
+    font-family: 'Inter', serif;
+    font-weight: 200;
+}
+
 .bold {
-    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
 }
 
 .bolder {
     font-weight: 900;
 }
 
-.thin {
-    font-family: 'Inter', serif;
-    font-weight: 200;
-}
 
 
 /*! FIRST PAGE*/
@@ -98,9 +101,9 @@ a{
     color: #D20094;
     font-size: x-large;
     font-family: 'Outfit', sans-serif;
-    font-weight: bolder;
     margin-top: 30px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 #lista {
@@ -144,8 +147,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .first .footer .nextPoint {
-    margin-bottom: 10px;
-    margin-top: -15px;
+    margin-top: -20px;
     margin-left: 600px;
 }
 
