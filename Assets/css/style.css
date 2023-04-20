@@ -11,6 +11,10 @@
     height: 650px;
     font-family: 'Outfit', sans-serif;
     padding: 40px 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .logo {
