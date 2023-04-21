@@ -18,7 +18,7 @@ let fourthTemplate = templates[3].content.cloneNode(true);
 let startButton = document.querySelector('.startButton');
 // console.log(startButton);
 
-startButton.addEventListener('click', function () {
+startButton.addEventListener('click', function() {
     target.innerHTML = '';
     target.append(firstTemplate)
 
@@ -33,14 +33,14 @@ let risposteSbagliate = [];
 async function init() {
 
     let apiUrl = 'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy';
-    domande = await fetch(apiUrl).then(res => res.json());//ottengo le domande
-    domande = shuffle(domande.results);//mescolo le domande
+    domande = await fetch(apiUrl).then(res => res.json()); //ottengo le domande
+    domande = shuffle(domande.results); //mescolo le domande
 
     // console.log(domande);
 
     let firstButton = firstTemplate.querySelector('.firstButton');
     console.log(firstButton);
-    firstButton.addEventListener('click', function () {
+    firstButton.addEventListener('click', function() {
 
         if (document.nomeForm.cb.checked) {
             target.innerHTML = '';
@@ -64,28 +64,30 @@ function createButtons() {
 
 
     //inizio a selezionare gli elementi con cui interagire
-    let titolo = secondTemplate.querySelector('.question');
+    let titolo = document.querySelector('.main .question');
     console.log(titolo);
-    let areaBottoni = secondTemplate.querySelector('.answers');
+    let areaBottoni = document.querySelector('.main .answers');
     console.log(areaBottoni);
     areaBottoni.innerHTML = '';
 
     //inizio a compilare
     titolo.textContent = question;
 
-    let risposteCompleto = incorrect_answers;//assegno il valore ad un nuovo array che modificherò, lasciando intatto incorrect_answers
+    let risposteCompleto = incorrect_answers; //assegno il valore ad un nuovo array che modificherò, lasciando intatto incorrect_answers
     risposteCompleto.push(correct_answer);
 
     if (type != 'boolean') {
-        risposteCompleto = shuffle(risposteCompleto);//mescolo le risposte
+        risposteCompleto = shuffle(risposteCompleto); //mescolo le risposte
     }
 
     for (let rispostaSingola of risposteCompleto) {
-        let button = secondTemplate.createElement('button');
+
+        let button = document.createElement('button');
         button.textContent = rispostaSingola;
-        button.classList.add('buttQuest bold');
-        button.addEventListener('click', function () {
-            if (domande.length < contatore) {
+        button.classList.add('buttQuest');
+        button.addEventListener('click', function() {
+            if (contatore <= 10) {
+
 
                 contatore++;
                 if (incorrect_answers.includes(rispostaSingola)) {
