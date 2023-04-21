@@ -46,12 +46,12 @@ async function init() {
             target.innerHTML = '';
             target.append(secondTemplate);
 
+
         } else {
             alert("CheckBox non spuntato");
 
         };
-    })
-
+    });
 }
 
 // function createButtons(){
@@ -132,6 +132,7 @@ let futureTime = starTime + setTime;
 
 let = timerLoop = setInterval(countDownTimer);
 countDownTimer();
+
 
 function countDownTimer() {
     let currentTime = Date.now();
