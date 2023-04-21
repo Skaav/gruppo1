@@ -69,6 +69,8 @@ function createButtons() {
     let areaBottoni = document.querySelector('.main .answers');
     console.log(areaBottoni);
     areaBottoni.innerHTML = '';
+    let avanzamentoDomande = document.querySelector('.footer .avanzamentoDomande');
+    avanzamentoDomande.innerHTML = contatore + 1;
 
     //inizio a compilare
     titolo.textContent = question;
@@ -87,7 +89,6 @@ function createButtons() {
         button.classList.add('buttQuest');
         button.addEventListener('click', function() {
             if (contatore < 10) {
-
 
                 contatore++;
                 if (incorrect_answers.includes(rispostaSingola)) {
