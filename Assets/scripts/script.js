@@ -88,7 +88,7 @@ function createButtons() {
         button.textContent = rispostaSingola;
         button.classList.add('buttQuest');
         button.addEventListener('click', function() {
-            if (contatore < 10) {
+            if (contatore < 9) {
 
                 contatore++;
                 if (incorrect_answers.includes(rispostaSingola)) {
@@ -203,14 +203,13 @@ function countDownTimer() {
 
 // });
 
-//! FO FOR LAST PAGE
-let rateButton = document.querySelector('.rate');
+//! TO LAST PAGE
+let rateButton = thirdTemplate.querySelector('.rate');
 rateButton.addEventListener('click', function() {
     target.innerHTML = '';
     target.append(fourthTemplate)
 
 })
-
 
 //* STARS
 let stars = fourthTemplate.querySelectorAll('.stars i');

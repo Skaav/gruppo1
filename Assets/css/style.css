@@ -406,8 +406,14 @@ input[type="checkbox"]:checked::after {
     background: transparent;
     border: none;
     border-bottom: #D20094 1px solid;
+    color: white;
+}
+
+.fourth .comment:hover, .fourth .comment:focus, .fourth .comment:active{
+    outline: none;
 }
 
 .fourth .nextPoint {
     margin-top: 50px;
+    
 }
