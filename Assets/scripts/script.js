@@ -34,82 +34,87 @@ async function init() {
 
     let apiUrl = 'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy';
     domande = await fetch(apiUrl).then(res => res.json());//ottengo le domande
-    // domande = shuffle(domande.results);//mescolo le domande
+    domande = shuffle(domande.results);//mescolo le domande
 
     // console.log(domande);
 
     let firstButton = firstTemplate.querySelector('.firstButton');
     console.log(firstButton);
     firstButton.addEventListener('click', function () {
-        // createButtons();
+
         if (document.nomeForm.cb.checked) {
             target.innerHTML = '';
             target.append(secondTemplate);
+
 
 
         } else {
             alert("CheckBox non spuntato");
 
         };
+        createButtons();
     });
 }
 
-// function createButtons(){
+function createButtons() {
 
 
-//     domandaCorrente = domande[contatore];
-//     let {type,difficulty,question,correct_answer,incorrect_answers} = domandaCorrente;
+    domandaCorrente = domande[contatore];
+    let { type, difficulty, question, correct_answer, incorrect_answers } = domandaCorrente;
 
 
-//     //inizio a selezionare gli elementi con cui interagire
-//     let titolo = document.querySelector('.stage2 .stage-title');
-//     let areaBottoni = document.querySelector('.stage2 .button-area');
-//     areaBottoni.innerHTML = '';
+    //inizio a selezionare gli elementi con cui interagire
+    let titolo = secondTemplate.querySelector('.question');
+    console.log(titolo);
+    let areaBottoni = secondTemplate.querySelector('.answers');
+    console.log(areaBottoni);
+    areaBottoni.innerHTML = '';
 
-//     //inizio a compilare
-//     titolo.textContent = question;
+    //inizio a compilare
+    titolo.textContent = question;
 
-//     let risposteCompleto = incorrect_answers;//assegno il valore ad un nuovo array che modificherò, lasciando intatto incorrect_answers
-//     risposteCompleto.push(correct_answer);
+    let risposteCompleto = incorrect_answers;//assegno il valore ad un nuovo array che modificherò, lasciando intatto incorrect_answers
+    risposteCompleto.push(correct_answer);
 
-//     if(type != 'boolean'){
-//         risposteCompleto = shuffle(risposteCompleto);//mescolo le risposte
-//     }
+    if (type != 'boolean') {
+        risposteCompleto = shuffle(risposteCompleto);//mescolo le risposte
+    }
 
-//     for(let rispostaSingola of risposteCompleto){
-//         let button = document.createElement('button');
-//         button.textContent = rispostaSingola;
-//         button.classList.add('bottone-risposta');
-//         button.addEventListener('click',function(){
-//             if(domande.length < contatore){
+    for (let rispostaSingola of risposteCompleto) {
+        let button = secondTemplate.createElement('button');
+        button.textContent = rispostaSingola;
+        button.classList.add('buttQuest bold');
+        button.addEventListener('click', function () {
+            if (domande.length < contatore) {
 
-//                 contatore++;
-//                 if(incorrect_answers.includes(rispostaSingola)){
-//                     risposteSbagliate.push(domandaCorrente)
-//                 }
-//                 createButtons();
-//             }else{
-//                 //funzione che distrugge lo stage 2 e attiva lo stage 3
-//             }
-//         })
-//         areaBottoni.append(button)
-//     }
+                contatore++;
+                if (incorrect_answers.includes(rispostaSingola)) {
+                    risposteSbagliate.push(domandaCorrente)
+                }
+                createButtons();
+            }
+            // else{
+            //     //funzione che distrugge lo stage 2 e attiva lo stage 3
+            // }
+        })
+        areaBottoni.append(button)
+    }
 
-//     console.log(risposteSbagliate);
+    console.log(risposteSbagliate);
 
 
-// }
+}
 
-// function shuffle(array) {
-//     let newArr = [];
-//     let length = array.length;
-//     for (let i = 0; i < length; i++) {
-//       let rand = Math.floor(Math.random() * array.length);
-//       newArr.push(array[rand]);
-//       array.splice(rand, 1);
-//     }
-//     return newArr;
-//   }
+function shuffle(array) {
+    let newArr = [];
+    let length = array.length;
+    for (let i = 0; i < length; i++) {
+        let rand = Math.floor(Math.random() * array.length);
+        newArr.push(array[rand]);
+        array.splice(rand, 1);
+    }
+    return newArr;
+}
 
 init();
 
