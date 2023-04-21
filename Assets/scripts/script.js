@@ -18,11 +18,11 @@ let fourthTemplate = templates[3].content.cloneNode(true);
 let startButton = document.querySelector('.startButton');
 // console.log(startButton);
 
-startButton.addEventListener('click',function(){
+startButton.addEventListener('click', function () {
     target.innerHTML = '';
     target.append(firstTemplate)
 
-    })
+})
 
 //! FIRST AND SECOND PAGE
 let contatore = 0;
@@ -30,23 +30,28 @@ let domande;
 let domandaCorrente;
 let risposteSbagliate = [];
 
-async function init(){
-    
+async function init() {
+
     let apiUrl = 'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy';
     domande = await fetch(apiUrl).then(res => res.json());//ottengo le domande
     // domande = shuffle(domande.results);//mescolo le domande
-    
+
     // console.log(domande);
-    
+
     let firstButton = firstTemplate.querySelector('.firstButton');
     console.log(firstButton);
-    firstButton.addEventListener('click',function(){
+    firstButton.addEventListener('click', function () {
         // createButtons();
-        
-        target.innerHTML = '';
-        target.append(secondTemplate)
+        if (document.nomeForm.cb.checked) {
+            target.innerHTML = '';
+            target.append(secondTemplate);
+
+        } else {
+            alert("CheckBox non spuntato");
+
+        };
     })
-    
+
 }
 
 // function createButtons(){
@@ -55,7 +60,7 @@ async function init(){
 //     domandaCorrente = domande[contatore];
 //     let {type,difficulty,question,correct_answer,incorrect_answers} = domandaCorrente;
 
-    
+
 //     //inizio a selezionare gli elementi con cui interagire
 //     let titolo = document.querySelector('.stage2 .stage-title');
 //     let areaBottoni = document.querySelector('.stage2 .button-area');
@@ -91,7 +96,7 @@ async function init(){
 //     }
 
 //     console.log(risposteSbagliate);
-    
+
 
 // }
 
@@ -154,7 +159,7 @@ function countDownTimer() {
     //5 sec condition
 
     //end
-    if(remainingTime < 0) {
+    if (remainingTime < 0) {
         clearInterval(timerLoop);
         semicirles[0].style.display = 'none';
         semicirles[1].style.display = 'none';
@@ -176,12 +181,12 @@ let chart = new Chart(canvas, {
     data: {
         lables: lable,
         datasets: [{
-            backgroundColor:[
+            backgroundColor: [
                 "#D20094",
                 "#00ffff"
             ],
             borderWidth: 0,
-            cutout: 95, 
+            cutout: 95,
             lable: 'Risposte',
             data: data
         }],
@@ -194,8 +199,8 @@ let stars = fourthTemplate.querySelectorAll('.stars i');
 
 stars.forEach((star, index1) => {
     star.addEventListener("click", () => {
-      stars.forEach((star, index2) => {
-        index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
-      });
+        stars.forEach((star, index2) => {
+            index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
+        });
     });
-  });
+});
