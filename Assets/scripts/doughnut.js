@@ -8,11 +8,11 @@ let chart = new Chart(canvas, {
         lables: lable,
         datasets: [{
             backgroundColor:[
-                "#00ffff",
-                "#D20094"
+                "#D20094",
+                "#00ffff"
             ],
             borderWidth: 0,
-            cutout: 90, 
+            cutout: 95, 
             lable: 'Risposte',
             data: data
         }],
