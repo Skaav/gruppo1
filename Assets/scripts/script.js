@@ -18,11 +18,12 @@ let secondTemplate = templates[1].content.cloneNode(true);
 let startButton = document.querySelector('.startButton');
 // console.log(startButton);
 
-startButton.addEventListener('click',function(){
+startButton.addEventListener('click', function () {
     target.innerHTML = '';
     target.append(firstTemplate)
+});
 
-    })
+
 
 //! FIRST AND SECOND PAGE
 let contatore = 0;
@@ -30,23 +31,29 @@ let domande;
 let domandaCorrente;
 let risposteSbagliate = [];
 
-async function init(){
-    
+async function init() {
+
     let apiUrl = 'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy';
     domande = await fetch(apiUrl).then(res => res.json());//ottengo le domande
     // domande = shuffle(domande.results);//mescolo le domande
-    
+
     // console.log(domande);
-    
+
     let firstButton = firstTemplate.querySelector('.firstButton');
     console.log(firstButton);
-    firstButton.addEventListener('click',function(){
+    firstButton.addEventListener('click', function () {
         // createButtons();
-        
-        target.innerHTML = '';
-        target.append(secondTemplate)
+
+        if (document.nomeForm.cb.checked) {
+            target.innerHTML = '';
+            target.append(secondTemplate);
+
+        } else {
+            alert("CheckBox non spuntato");
+
+        };
     })
-    
+
 }
 
 // function createButtons(){
@@ -55,7 +62,7 @@ async function init(){
 //     domandaCorrente = domande[contatore];
 //     let {type,difficulty,question,correct_answer,incorrect_answers} = domandaCorrente;
 
-    
+
 //     //inizio a selezionare gli elementi con cui interagire
 //     let titolo = document.querySelector('.stage2 .stage-title');
 //     let areaBottoni = document.querySelector('.stage2 .button-area');
@@ -91,7 +98,7 @@ async function init(){
 //     }
 
 //     console.log(risposteSbagliate);
-    
+
 
 // }
 
