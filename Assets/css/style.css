@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Outfit:wght@400;700&display=swap');
 
 .templateContainer {
-    background-image: url(/assets/img/bg.jpg);
+    background-image: url(/m1/s4/BuildWeek/Assets/img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -22,7 +22,7 @@
     width: 17%;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -37,10 +37,10 @@ a{
     display: flex;
 }
 
-.addRelative{
+.addRelative {
     position: relative;
 }
-  
+
 /*! BUTTON GENERAL */
 
 .nextPoint {
@@ -53,7 +53,7 @@ a{
     box-shadow: #00ffff 0 -5px 15px, #00ffff 0 5px 15px;
 }
 
-.nextPoint:hover  {
+.nextPoint:hover {
     background-color: #00ffff;
     color: white;
     cursor: pointer;
@@ -141,6 +141,7 @@ input[type="checkbox"]::before {
     left: 0;
     cursor: pointer;
 }
+
 input[type="checkbox"]::after {
     content: " ";
     height: 17px;
@@ -153,6 +154,7 @@ input[type="checkbox"]::after {
     transform: scale(0);
     transition: all 0.3s ease-in-out;
 }
+
 input[type="checkbox"]:checked::after {
     transform: scale(1);
 }
@@ -199,23 +201,23 @@ input[type="checkbox"]:checked::after {
     transform-origin: right center;
 }
 
-.semicircle:nth-child(1){
+.semicircle:nth-child(1) {
     background-color: #00ffff;
     z-index: 2;
 }
 
-.semicircle:nth-child(2){
+.semicircle:nth-child(2) {
     background-color: #00ffff;
     z-index: 3;
 }
 
-.semicircle:nth-child(3){
+.semicircle:nth-child(3) {
     background-color: #dddddd;
     z-index: 4;
     display: none;
 }
 
-.outermost-circle{
+.outermost-circle {
     width: 300px;
     height: 300px;
     background-color: #64256a;
@@ -247,7 +249,7 @@ input[type="checkbox"]:checked::after {
     margin: 2px 10px 2px 10px;
 }
 
-.timer-container p{
+.timer-container p {
     font-size: 30px;
     font-weight: 100px;
 }
@@ -391,7 +393,8 @@ input[type="checkbox"]:checked::after {
     color: rgba(23, 0, 57, 0.5);
     transition: color 0.2s
 }
-.fourth .stars i.active{
+
+.fourth .stars i.active {
     color: #00ffff
 }
 
@@ -409,11 +412,13 @@ input[type="checkbox"]:checked::after {
     color: white;
 }
 
-.fourth .comment:hover, .fourth .comment:focus, .fourth .comment:active{
+.fourth .comment:hover,
+.fourth .comment:focus,
+.fourth .comment:active {
     outline: none;
 }
 
 .fourth .nextPoint {
     margin-top: 50px;
-    
+
 }
