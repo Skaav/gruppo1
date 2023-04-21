@@ -14,17 +14,22 @@
 
 <body>
 
+    <div class="templateContainer">
+        <div class="header">
+            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+        </div>
+        <!--! DIV TARGET -->
+        <div class="target">
+            <button class="nextPoint startButton">START THE QUIZ</button>
+        </div>
+    </div> 
+
     <!--TODO (PRIMA PAGINA) -->
     <template id="primaPagina">
     <!--? COMMENTARE I TEMPLATE PER VISUALIZZARE IL CONTENUTO IN PAGINA -->
 
-    <div class="templateContainer first thin">
+    <div class="first thin">
         <!--! CLASSE PER CONTAINER-->
-
-        <!--* HEADER -->
-        <div class="header">
-            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
-        </div>
 
         <!--* MAIN -->
         <div class="main">
@@ -32,7 +37,7 @@
                 <div class="bold">your exam</div>
             </div>
             <!--! CLASSE PER H1-->
-            <div class="purple bold">Instructions</div>
+            <div class="purple">Instructions</div>
             <div class="p">We don't expect most engineers to know the answers to all of these </div>
             <div class="p">questions, so don't worry if you're unsure of a few of them</div>
 
@@ -54,7 +59,7 @@
                 <!--! CLASSE PER P-->
                 </div> 
 
-                <button class="nextPoint">PROCEED</button>
+                <button class="nextPoint firstButton">PROCEED</button>
             <!--! CLASSE PER BOTTONI-->
             </form>
     </div>
@@ -64,12 +69,10 @@
 
     <template id="secondaPagina">
 
-    <div class="templateContainer second">
-
-        <!--* HEADER -->
-        <div class="header">
-            <!--! CLASSE PER FLEX GENITORE-->
-            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
+    <div class="second">
+        
+        <!--* MAIN -->
+        <div class="main">
             <div class="addRelative">
                 <div class="main-container center">
                     <!-- progress indicator -->
@@ -88,10 +91,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!--* MAIN -->
-        <div class="main">
             <div class="question h2">
                 <!--! CLASSE PER H2-->
                 <p class="h2 bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -128,14 +127,10 @@
 
     <!--TODO (TERZA PAGINA) -->
 
-    <!-- <template id="terzaPagina"> -->
+    <template id="terzaPagina">
 
-    <div class="templateContainer third">
-        <!--* HEADER -->
-        <div class="header">
-            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
-        </div>
-
+    <div class="third">
+        
         <!--* MAIN -->
         <div class="main">
 
@@ -192,18 +187,14 @@
             </div>
         </div>
     </div>
-    <!-- </template> -->
+    </template>
 
     <!--TODO (QUARTA PAGINA) -->
 
     <template id="quartaPagina">
 
-    <div class="templateContainer fourth thin">
-        <!--* HEADER -->
-        <div class="header">
-            <img src="Assets/img/epicode_logo.png" alt="Logo Epicode" class="logo">
-        </div>
-
+    <div class="fourth thin">
+        
         <!--* MAIN -->
         <div class="main">
             <div class="h2 bold">Tell us how it's going</div>
@@ -233,10 +224,10 @@
     </div>
     </template>
 
+    <script src="Assets/scripts/script.js"></script>
     <script src="Assets/scripts/timer.js"></script>
     <script src="Assets/scripts/doughnut.js"></script>
     <script src="Assets/scripts/stars.js"></script>
-    <script></script>
 </body>
 
 </html>

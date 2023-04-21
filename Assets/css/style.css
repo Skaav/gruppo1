@@ -1,6 +1,7 @@
 /*! STILI GENERALI */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Outfit&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Outfit:wght@400;700&display=swap');
+
 .templateContainer {
     background-image: url(/assets/img/bg.jpg);
     background-size: cover;
@@ -11,6 +12,10 @@
     height: 650px;
     font-family: 'Outfit', sans-serif;
     padding: 40px 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -35,7 +40,7 @@ a{
 .addRelative{
     position: relative;
 }
-
+  
 /*! BUTTON GENERAL */
 
 .nextPoint {
@@ -49,15 +54,23 @@ a{
 }
 
 .nextPoint:hover  {
-    background-color: rgba(0, 255, 255, 0.874);
+    background-color: #00ffff;
     color: white;
+    cursor: pointer;
 }
 
+.startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /*! FONT */
 
 .h1 {
     font-size: 4rem;
+    font-family: 'Outfit', sans-serif;
 }
 
 .h2 {
@@ -77,18 +90,20 @@ a{
     line-height: 1.2;
 }
 
+.thin {
+    font-family: 'Inter', serif;
+    font-weight: 200;
+}
+
 .bold {
-    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
 }
 
 .bolder {
     font-weight: 900;
 }
 
-.thin {
-    font-family: 'Inter', serif;
-    font-weight: 200;
-}
 
 
 /*! FIRST PAGE*/
@@ -96,8 +111,10 @@ a{
 .purple {
     color: #D20094;
     font-size: x-large;
+    font-family: 'Outfit', sans-serif;
     margin-top: 30px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 #lista {
@@ -126,11 +143,11 @@ input[type="checkbox"]::before {
 }
 input[type="checkbox"]::after {
     content: " ";
-    height: 15px;
+    height: 17px;
     width: 15px;
     position: absolute;
     background-color: white;
-    top: 1.1px;
+    top: 0px;
     left: 2px;
     cursor: pointer;
     transform: scale(0);
@@ -141,8 +158,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .first .footer .nextPoint {
-    margin-bottom: 10px;
-    margin-top: -15px;
+    margin-top: -20px;
     margin-left: 600px;
 }
 
