@@ -1,6 +1,7 @@
 /*! STILI GENERALI */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Outfit:wght@400;700&display=swap');
+
 .templateContainer {
     background-image: url(/assets/img/bg.jpg);
     background-size: cover;
