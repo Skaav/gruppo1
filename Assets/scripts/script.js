@@ -86,7 +86,7 @@ function createButtons() {
         button.textContent = rispostaSingola;
         button.classList.add('buttQuest');
         button.addEventListener('click', function() {
-            if (contatore <= 10) {
+            if (contatore < 10) {
 
 
                 contatore++;
@@ -94,10 +94,10 @@ function createButtons() {
                     risposteSbagliate.push(domandaCorrente)
                 }
                 createButtons();
+            } else {
+                target.innerHTML = '';
+                target.append(thirdTemplate); //funzione che distrugge lo stage 2 e attiva lo stage 3
             }
-            // else{
-            //     //funzione che distrugge lo stage 2 e attiva lo stage 3
-            // }
         })
         areaBottoni.append(button)
     }
